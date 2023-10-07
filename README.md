@@ -22,5 +22,12 @@ to solve his/her technical issues.
 On a random day of each month, disruption occurs. As a result users inter
 arrival times change that should be modeled.
 
-In this phase, we calculate some evaluation criteria. And then in the second phase, we need to make a statistical comparison between 
+In this phase, we calculate these evaluation criteria:
+    1- Average time VIP users spend in the system
+    2- Percentage of VIP users that never wait in queues
+    3- Maximum and average length and waiting time in each queue, based on user and server type
+    4- Each type of servers' utilization
+    5- The shift in which more users get tired and leave the queue
+    6- Got-tired users' average waiting time till leaving
+And then in the second phase, we need to make a statistical comparison between 
 two configurations of the system.
