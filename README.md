@@ -15,8 +15,7 @@ user) and queue are different, one of the experts or amateur servers will serve 
 The second subsystem is the call-back mechanism. In a specific condition, the user can 
 leave the queue and require a call-back option; this option will make servers call him 
 on the 2nd or 3rd shift of the day, whenever they are idle. The third subsystem
-is the technical call. when a user ends their call with one of the servers (
-expert or amateur) he/she can demand to be connected to technical servers
+is the technical call. when a user ends their call with one of the servers (expert or amateur) he/she can demand to be connected to technical servers
 to solve his/her technical issues.
 
 On a random day of each month, disruption occurs. As a result users inter
