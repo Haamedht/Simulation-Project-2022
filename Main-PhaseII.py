@@ -1,34 +1,34 @@
 """
 We want to simulate a 24/7 call-center.
-There are 8 hours shifts and 3 types of servers who serve normal and VIP type of users:
+There are 8 hours shifts and 3 types of servers that serve normal and VIP types of users:
    . Expert server (2)
    . Rookie server (3)
    . Technical server (2)
 VIP users have a higher priority than normal users. they're also being served only by
-expert servers, where the normal users, are served by both expert and rookie servers.
+expert servers, whereas normal users are served by both expert and rookie servers.
 Users first get served by expert and rookie servers, then they may have a technical
-question; that's exactly when technical servers enters.
-Each user gets in it's own queue which has a FIFO discipline. he may use re-call button, 
+question; that's exactly when technical servers enter.
+Each user gets in its own queue which has a FIFO discipline. he may use the re-call button 
 so that whenever a server is free, shall call him. but some cannot wait and may get tired
-and leave the queue for good. also there can be a intruption in system.
+and leave the queue for good. also, there can be an interruption in the system.
 Input distributions:
-    1- Users' interarrival time in first shift: Exp(1/3)
-    2- Users' interarrival time in second shift: Exp(1)
-    3- Users' interarrival time in third shift: Exp(1/2)
-    4- Users' interarrival time in first shift in interuption days: Exp(1/2)
-    5- Users' interarrival time in second shift in interuption days: Exp(2)
-    6- Users' interarrival time in third shift in interuption days: Exp(1)
+    1- Users' interarrival time in the first shift: Exp(1/3)
+    2- Users' interarrival time in the second shift: Exp(1)
+    3- Users' interarrival time in the third shift: Exp(1/2)
+    4- Users' interarrival time in the first shift in interruption days: Exp(1/2)
+    5- Users' interarrival time in the second shift in interruption days: Exp(2)
+    6- Users' interarrival time in the third shift in interruption days: Exp(1)
     7- Expert servers' time service: Exp(1/3)
     8- Rookie servers' time service: Exp(1/7)
     9- Technical servers' time service: Exp(1/10)
 Outputs:
-    1- Average time VIP users spend in system
+    1- Average time VIP users spend in the system
     2- Percentage of VIP users that never wait in queues
     3- Maximum and average length and waiting time in each queue, based on user and server type
     4- Each type of servers' utilization
-    5- The shift in which more users get tired and left the queue
-    6- Got tired users' average waiting time till leave
-Authors: Mobina Hassanzade Azar, Hamed Hatami
+    5- The shift in which more users get tired and leave the queue
+    6- Got tired users' average waiting time till leaving
+Authors: Hamed Hatami, Mobina Hassanzade Azar
 Date: Spring 2022
 """
 
@@ -47,7 +47,7 @@ def uniform(a, b):
     return a + (b - a) * r
 
 
-# To save datas for all the replications
+# To save data for all the replications
 total_VIP_users_average_time_in_system = list()
 
 total_VIP_users_zero_waiting_time_in_system = list()
